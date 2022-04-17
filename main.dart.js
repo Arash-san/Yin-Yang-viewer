@@ -52652,8 +52652,9 @@ b5(){this.bH()},
 S(a,b){var s,r=this,q=null,p=B.dr.i(0,500),o=t.E,n=A.a3c(A.a([new A.A_(B.xQ,new A.ZW(b),q),B.rx,A.yJ(A.a([A.W4(""+r.a.c[0]+" x "+r.a.c[1]+" puzzle",q,B.rL,q),B.rz,A.W4(J.ae5(J.a28(J.av(J.av(r.a.d,0),J.a2_(J.by(J.av(r.a.d,0)),1)),"\n")[1],"Found ",""),B.dD,B.Hf,q),B.ry],o),B.bo,B.b5,B.b6)],o),B.bo,B.b5,B.b6),m=J.a2_(J.by(J.av(r.a.d,0)),3)
 if(b.a_(t.w).f.a.a<500){s=r.a.c[1]
 if(s>12)s=1
-else s=s>6?2:3}else s=r.a.c[1]>5?4:5
-return A.a7n(p,A.a3d(new A.cH(B.xs,A.yJ(A.a([n,A.a65(A.a2i(A.pQ(q,A.a7s(A.a6c(new A.CW(s,10,5,0.8),new A.ZX(r),m,B.xr,q,!1),q,!0,B.Cl,!0,10,!0),q,q,q,q,q,700),q,q))],o),B.bo,B.b5,B.b6),q),!0))}}
+else s=s>6?2:3}else{s=r.a.c[1]
+if(s>12)s=2
+else s=s>5?3:4}return A.a7n(p,A.a3d(new A.cH(B.xs,A.yJ(A.a([n,A.a65(A.a2i(A.pQ(q,A.a7s(A.a6c(new A.CW(s,10,5,0.8),new A.ZX(r),m,B.xr,q,!1),q,!0,B.Cl,!0,10,!0),q,q,q,q,q,700),q,q))],o),B.bo,B.b5,B.b6),q),!0))}}
 A.ZW.prototype={
 $0(){A.kP(this.a,!1).vU(0,null)},
 $S:0}
