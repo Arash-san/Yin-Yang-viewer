@@ -31,13 +31,32 @@
 
   <title>yin_yang</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    .container {
+      width: "20px";
+      height: "20px";
+
+    }
+    .indicator{
+      width: 40;
+      height: 40;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+</style>
 </head>
-<body>
+<body style="overflow: hidden; background-color: #202020;"></bodystyle>
+
+  <div id="loading_indicator" class="container">
+    <img class="indicator" src="./assets/loading.svg" />
+  </div>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2435703439';
+    var serviceWorkerVersion = '2112889671';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -99,6 +118,14 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+    window.onload = function () {
+        setTimeout(function () {
+          var loadingIndicator =  document.getElementById("loading_indicator");
+          if (loadingIndicator) {
+            loadingIndicator.remove();
+          }
+        }, 20000);
+      }
   </script>
 </body>
 </html>
